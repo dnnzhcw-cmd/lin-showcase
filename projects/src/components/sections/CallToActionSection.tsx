@@ -47,7 +47,7 @@ export default function CallToActionSection() {
           </motion.a>
 
           <motion.a
-            href="https://github.com/dnnzhcw-cmd/waytoAGI-demo-1"
+            href="https://github.com/dnnzhcw-cmd/lin-showcase"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
