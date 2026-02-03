@@ -1,0 +1,316 @@
+{
+  "version": "1.10",
+  "description": "ClueBoard 展示页上下文路由映射表",
+  "lastUpdate": "2026-02-04",
+  "triggers": {
+    "线框图|布局|wireframe|结构|组件层次": {
+      "paths": [
+        "_global.md",
+        "wireframes/project-layout-wireframe.md"
+      ],
+      "description": "项目布局线框图",
+      "priority": "high"
+    },
+    "导航|菜单|锚点|滚动|左侧|顶部|菜单栏": {
+      "paths": [
+        "_global.md",
+        "modules/layout/navigation-bar.md"
+      ],
+      "description": "导航栏相关功能",
+      "priority": "high"
+    },
+    "底部|页脚|联系|社交|邮箱|footer": {
+      "paths": [
+        "_global.md",
+        "modules/layout/footer.md"
+      ],
+      "description": "底部组件",
+      "priority": "medium"
+    },
+    "便签|卡片|状态|点击|切换|note": {
+      "paths": [
+        "_global.md",
+        "modules/ui/note-card.md",
+        "types/component-props.md"
+      ],
+      "description": "虚拟便签组件",
+      "priority": "high"
+    },
+    "信息卡片|变体|进度|info": {
+      "paths": [
+        "_global.md",
+        "modules/ui/info-card.md",
+        "types/component-props.md"
+      ],
+      "description": "信息卡片组件",
+      "priority": "medium"
+    },
+    "首屏|Hero|开场|全屏|浮动|背景": {
+      "paths": [
+        "_global.md",
+        "modules/sections/hero-section.md",
+        "styles/theme-configuration.md"
+      ],
+      "description": "首屏区域",
+      "priority": "high"
+    },
+    "痛点|场景|洞察|pain|问题": {
+      "paths": [
+        "_global.md",
+        "modules/sections/pain-points-section.md",
+        "modules/ui/note-card.md"
+      ],
+      "description": "痛点场景展示",
+      "priority": "high"
+    },
+    "演示|MVP|功能|界面|demo": {
+      "paths": [
+        "_global.md",
+        "modules/sections/mvp-demo-section.md"
+      ],
+      "description": "MVP产品演示",
+      "priority": "medium"
+    },
+    "对比|竞品|矩阵|差异|competitor": {
+      "paths": [
+        "_global.md",
+        "modules/sections/competitor-comparison.md"
+      ],
+      "description": "竞品对比分析",
+      "priority": "medium"
+    },
+    "学习|复盘|心得|收获|路径|journey": {
+      "paths": [
+        "_global.md",
+        "modules/sections/learning-journey.md"
+      ],
+      "description": "学习复盘模块",
+      "priority": "high"
+    },
+    "技术|路线图|栈|规划|roadmap": {
+      "paths": [
+        "_global.md",
+        "modules/sections/tech-stack-roadmap.md",
+        "arch/tech-stack.md",
+        "modules/ui/info-card.md"
+      ],
+      "description": "技术栈与未来规划",
+      "priority": "medium"
+    },
+    "按钮|CTA|召唤|行动|call": {
+      "paths": [
+        "_global.md",
+        "modules/sections/call-to-action.md"
+      ],
+      "description": "行动召唤区域",
+      "priority": "medium-low"
+    },
+    "主题|颜色|样式|配色|theme": {
+      "paths": [
+        "_global.md",
+        "styles/theme-configuration.md"
+      ],
+      "description": "主题配置与色彩系统",
+      "priority": "high"
+    },
+    "结构|目录|布局|项目|结构|structure": {
+      "paths": [
+        "_global.md",
+        "arch/project-structure.md"
+      ],
+      "description": "项目结构与组织",
+      "priority": "high"
+    },
+    "技术栈|框架|版本|技术|stack": {
+      "paths": [
+        "_global.md",
+        "arch/tech-stack.md"
+      ],
+      "description": "技术栈说明",
+      "priority": "medium"
+    },
+    "工具|函数|utils|工具类": {
+      "paths": [
+        "_global.md",
+        "utils/utility-functions.md"
+      ],
+      "description": "工具函数库",
+      "priority": "low"
+    },
+    "类型|接口|定义|props|types": {
+      "paths": [
+        "_global.md",
+        "types/component-props.md"
+      ],
+      "description": "类型定义",
+      "priority": "low"
+    },
+    "动画|动效|过渡|motion|framer": {
+      "paths": [
+        "_global.md",
+        "styles/theme-configuration.md"
+      ],
+      "description": "动画效果配置",
+      "priority": "medium"
+    },
+    "响应式|移动端|适配|断点|responsive": {
+      "paths": [
+        "_global.md",
+        "styles/theme-configuration.md",
+        "arch/project-structure.md"
+      ],
+      "description": "响应式设计",
+      "priority": "high"
+    },
+    "优化|性能|lazy|代码分割|optimization": {
+      "paths": [
+        "_global.md",
+        "PLANS/optimization-tasks.md"
+      ],
+      "description": "性能优化任务",
+      "priority": "low"
+    },
+    "增强|新功能|改进|enhancement": {
+      "paths": [
+        "_global.md",
+        "PLANS/feature-enhancements.md"
+      ],
+      "description": "功能增强计划",
+      "priority": "low"
+    },
+    "button|input|label|badge|avatar|separator|scroll|tabs|sheet|popover|tooltip|hover": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-basic-components.md"
+      ],
+      "description": "shadcn/ui 基础组件",
+      "priority": "high"
+    },
+    "form|select|checkbox|radio|switch|slider|date|calendar|command": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-form-components.md"
+      ],
+      "description": "shadcn/ui 表单组件",
+      "priority": "high"
+    },
+    "table|card|alert|dialog|drawer|dropdown|menubar|context|navigation|breadcrumb|pagination|progress|skeleton|chart": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-data-display-components.md"
+      ],
+      "description": "shadcn/ui 数据展示组件",
+      "priority": "high"
+    },
+    "toast|alertdialog|sonner|label|switch|slider|select|command|combobox|popover|tooltip|hover|scrollarea|separator|tabs|sheet|breadcrumb": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-feedback-navigation-components.md"
+      ],
+      "description": "shadcn/ui 反馈与导航组件",
+      "priority": "high"
+    },
+    "accordion|collapsible|toggle|resizable|carousel|otp|inputgroup|field|item|buttongroup": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-dialog-checkbox-components.md"
+      ],
+      "description": "shadcn/ui 对话与复选组件",
+      "priority": "high"
+    },
+    "shadcn|ui组件|组件库|radix": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-basic-components.md",
+        "modules/ui/shadcn-form-components.md",
+        "modules/ui/shadcn-data-display-components.md",
+        "modules/ui/shadcn-feedback-navigation-components.md",
+        "modules/ui/shadcn-dialog-checkbox-components.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "shadcn/ui 组件库全部文档",
+      "priority": "high"
+    },
+    "empty|空状态|无数据": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Empty 空状态组件",
+      "priority": "high"
+    },
+    "kbd|快捷键|键盘|shortcut": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Kbd 键盘快捷键显示",
+      "priority": "high"
+    },
+    "spinner|加载|loading|旋转": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Spinner 加载动画",
+      "priority": "high"
+    },
+    "sidebar|侧边栏|面板|导航栏": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Sidebar 侧边栏组件",
+      "priority": "high"
+    },
+    "aspect|比例|ratio|宽高比": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "AspectRatio 宽高比组件",
+      "priority": "high"
+    },
+    "field|表单字段|form": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Field 表单字段组件",
+      "priority": "high"
+    },
+    "item|列表项|card": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "Item 列表项组件",
+      "priority": "high"
+    },
+    "button|group|按钮组": {
+      "paths": [
+        "_global.md",
+        "modules/ui/shadcn-additional-components.md"
+      ],
+      "description": "ButtonGroup 按钮组组件",
+      "priority": "high"
+    }
+  },
+  "loadingRules": {
+    "alwaysLoadFirst": "_global.md",
+    "autoLoadDependencies": true,
+    "maxDocuments": 3,
+    "prioritizeStarred": true,
+    "prioritizeNew": true
+  },
+  "keywordsPriority": {
+    "navigation": 1,
+    "note": 1,
+    "hero": 1,
+    "pain": 1,
+    "theme": 1,
+    "structure": 1,
+    "journey": 1,
+    "responsive": 1
+  }
+}
