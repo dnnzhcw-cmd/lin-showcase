@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import { VideoPlayer } from '@/components/ui/video-player';
 
 const features = [
   {
@@ -59,60 +59,14 @@ export default function MVPDemoSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <div className="relative rounded-xl overflow-hidden shadow-2xl bg-gray-100 aspect-video">
-              {/* 模拟演示界面 */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 p-8">
-                <div className="bg-white rounded-lg shadow-lg p-6 h-full">
-                  <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-xl font-bold text-gray-900">ClueBoard Demo</h3>
-                    <div className="text-sm text-gray-500">按 N 添加新卡片</div>
-                  </div>
-
-                  {/* 模拟便签区域 */}
-                  <div className="grid grid-cols-3 gap-4">
-                    {[
-                      { title: '完成项目文档', status: 'completed', color: 'bg-green-500' },
-                      { title: '准备路演材料', status: 'in-progress', color: 'bg-yellow-400' },
-                      { title: '联系投资人', status: 'not-started', color: 'bg-gray-300' },
-                      { title: '优化产品功能', status: 'not-started', color: 'bg-gray-300' },
-                      { title: '学习新技术', status: 'completed', color: 'bg-green-500' },
-                      { title: '整理学习笔记', status: 'in-progress', color: 'bg-yellow-400' },
-                    ].map((item, i) => (
-                      <motion.div
-                        key={i}
-                        className="bg-[var(--note-bg)] rounded-lg p-4 shadow-md border border-gray-200"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: 'spring', stiffness: 400 }}
-                      >
-                        <div className="flex items-start gap-2">
-                          <div className={`w-2 h-2 rounded-full mt-1.5 ${item.color}`} />
-                          <div className="flex-1">
-                            <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-
-                  {/* 添加按钮 */}
-                  <div className="mt-6 flex justify-center">
-                    <button className="px-6 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
-                      + 添加新卡片
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* 播放按钮覆盖层 */}
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[2px]">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-xl cursor-pointer"
-                >
-                  <div className="w-0 h-0 border-l-[30px] border-l-gray-900 border-y-[18px] border-y-transparent ml-2" />
-                </motion.div>
-              </div>
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <VideoPlayer
+                src="/videos/clueboard-demo.mp4"
+                poster="/videos/img_prod_clueboard_ClueBoard应用界面.png"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+              />
             </div>
           </motion.div>
 
