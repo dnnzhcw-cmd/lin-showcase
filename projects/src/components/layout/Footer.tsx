@@ -2,6 +2,7 @@
 
 import { Mail, MessageCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 export default function Footer() {
   return (
@@ -35,22 +36,48 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">关注我</h4>
             <div className="space-y-3">
-              <a
-                href="#"
-                className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>微信</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                </svg>
-                <span>小红书</span>
-              </a>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button
+                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer text-left"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    <span>微信</span>
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogTitle className="sr-only">微信二维码</DialogTitle>
+                  <div className="flex items-center justify-center">
+                    <img 
+                      src="/videos/WXgzh.jpeg" 
+                      alt="微信二维码" 
+                      className="max-w-full h-auto"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button
+                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer text-left"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span>小红书</span>
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogTitle className="sr-only">小红书二维码</DialogTitle>
+                  <div className="flex items-center justify-center">
+                    <img 
+                      src="/videos/xhs.jpg" 
+                      alt="小红书二维码" 
+                      className="max-w-full h-auto"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
